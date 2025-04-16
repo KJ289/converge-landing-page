@@ -11,7 +11,7 @@ export default function Home() {
       </Head>
 
       <div className="flex min-h-screen flex-col">
-        <header className="px-4 lg:px-6 h-14 flex items-center">
+        <header className="px-4 lg:px-6 h-14 flex items-center border-b">
           <a className="flex items-center justify-center" href="#">
             <span className="font-bold text-xl">Converge</span>
           </a>
@@ -31,8 +31,8 @@ export default function Home() {
           </nav>
         </header>
         <main className="flex-1">
-          <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
-            <div className="container px-4 md:px-6">
+          <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 bg-white dark:bg-gray-900">
+            <div className="container px-4 md:px-6 mx-auto">
               <div className="flex flex-col items-center space-y-4 text-center">
                 <div className="space-y-2">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
@@ -60,17 +60,15 @@ export default function Home() {
             </div>
           </section>
           <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
-            <div className="container px-4 md:px-6">
-              <div className="grid gap-6 lg:grid-cols-3 lg:gap-12">
-                <div className="flex flex-col justify-center space-y-4">
-                  <div className="space-y-2">
-                    <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Features</h2>
-                    <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                      Discover what makes Converge different
-                    </p>
-                  </div>
+            <div className="container px-4 md:px-6 mx-auto">
+              <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
+                <div className="space-y-4">
+                  <h2 className="text-3xl font-bold tracking-tighter">Features</h2>
+                  <p className="text-gray-500 dark:text-gray-400">
+                    Discover what makes Converge different
+                  </p>
                 </div>
-                <div className="grid gap-6 lg:col-span-2 lg:grid-cols-2">
+                <div className="grid gap-6 lg:grid-cols-2">
                   {[
                     {
                       title: "Modern Design",
