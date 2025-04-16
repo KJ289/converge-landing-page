@@ -13,6 +13,7 @@ const nextConfig = {
   },
   basePath: '/converge-landing-page',
   assetPrefix: '/converge-landing-page/',
+  trailingSlash: true,
 };
 
 module.exports = nextConfig; 
