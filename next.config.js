@@ -7,6 +7,12 @@ const nextConfig = {
     parallelServerCompiles: true,
     parallelServerBuildTraces: true,
   },
+  output: 'export',
+  images: {
+    unoptimized: true,
+  },
+  basePath: '/converge-landing-page',
+  assetPrefix: '/converge-landing-page/',
 };
 
 module.exports = nextConfig; 
